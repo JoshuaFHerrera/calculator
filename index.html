@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Josh's Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="calculator">
+      <input id="display" readonly />
+      <div id="buttons">
+        <div id="row1">
+          <button onclick="numOrOp('0')">0</button>
+          <button onclick="numOrOp('1')">1</button>
+          <button onclick="numOrOp('2')">2</button>
+          <button class="op" onclick="numOrOp('+')">+</button>
+        </div>
+        <div id="row2">
+          <button onclick="numOrOp('3')">3</button>
+          <button onclick="numOrOp('4')">4</button>
+          <button onclick="numOrOp('5')">5</button>
+          <button class="op" onclick="numOrOp('-')">-</button>
+        </div>
+        <div id="row3">
+          <button onclick="numOrOp('6')">6</button>
+          <button onclick="numOrOp('7')">7</button>
+          <button onclick="numOrOp('8')">8</button>
+          <button class="op" onclick="numOrOp('*')">x</button>
+        </div>
+        <div id="row4">
+          <button onclick="numOrOp('9')">9</button>
+          <button onclick="numOrOp('.')">.</button>
+          <button onclick="calculate()">=</button>
+          <button class="op" onclick="numOrOp('/')">÷</button>
+        </div>
+        <div id="row5">
+          <button onclick="clearDisplay()">C</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
